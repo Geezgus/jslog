@@ -14,7 +14,7 @@
 ## Installation
 
 ```bash
-npm install jslog
+npm install @geezgus/jslog
 ```
 
 ## Usage
