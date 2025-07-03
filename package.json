@@ -1,0 +1,56 @@
+{
+	"name": "@geezgus/jslog",
+	"version": "0.1.0",
+	"description": "A simple, lightweight, and pluggable logger for JavaScript and TypeScript.",
+	"type": "module",
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		},
+		"./plugins": {
+			"import": "./dist/plugins/index.mjs",
+			"require": "./dist/plugins/index.js"
+		}
+	},
+	"scripts": {
+		"clean": "rm -rf dist",
+		"build": "npm run clean && tsup src --format cjs,esm --dts",
+		"dev": "dotenvx run -- tsx --watch src/",
+		"lint": "biome check src",
+		"format": "biome format src",
+		"prepack": "npm run build"
+	},
+	"keywords": [
+		"log",
+		"logger",
+		"logging",
+		"typescript",
+		"javascript"
+	],
+	"author": "Gustavo Duarte",
+	"license": "MIT",
+	"files": [
+		"dist"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/geezgus/jslog.git"
+	},
+	"bugs": {
+		"url": "https://github.com/geezgus/jslog/issues"
+	},
+	"homepage": "https://github.com/geezgus/jslog#readme",
+	"devDependencies": {
+		"@biomejs/biome": "2.0.6",
+		"@dotenvx/dotenvx": "^1.45.1",
+		"@types/node": "^24.0.8",
+		"lefthook": "^1.11.14",
+		"tsup": "^8.5.0",
+		"tsx": "^4.20.3",
+		"typescript": "^5.8.3"
+	}
+}
