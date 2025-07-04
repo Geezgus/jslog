@@ -1,6 +1,6 @@
 {
 	"name": "@geezgus/jslog",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A simple, lightweight, and pluggable logger for JavaScript and TypeScript.",
 	"type": "module",
 	"exports": {
