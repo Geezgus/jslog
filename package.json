@@ -5,12 +5,12 @@
 	"type": "module",
 	"exports": {
 		".": {
-			"import": "./dist/index.mjs",
-			"require": "./dist/index.js"
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs"
 		},
 		"./plugins": {
-			"import": "./dist/plugins/index.mjs",
-			"require": "./dist/plugins/index.js"
+			"import": "./dist/plugins/index.js",
+			"require": "./dist/plugins/index.cjs"
 		}
 	},
 	"scripts": {
